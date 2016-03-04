@@ -14,4 +14,12 @@ public class CompaNumberTest{
         assertThat(result, is("4A0B"));
     }
 
+    @Test
+    public void should_return_0A4B() {
+        CompareNumber compareNumber = new CompareNumber();
+        String result = compareNumber.compare("4321", "1234");
+        assertThat(result, is("0A4B"));
+    }
+
+
 }
